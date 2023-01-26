@@ -2,9 +2,9 @@ from twilio.rest import Client
 import tkinter as tk
 
 # Your Account SID from twilio.com/console
-account_sid = "peace"
+account_sid = "your sid here"
 # Your Auth Token from twilio.com/console
-auth_token  = "pace"
+auth_token  = "your token here"
 client = Client(account_sid, auth_token)
 
 employeeContactList = []
@@ -19,8 +19,8 @@ class Contacts:
         print(self.number)
     def addToGroup(self, groupList):
         groupList.append(self)
-Mason = Contacts('Mason', 'King', '+12073203850')
-Ben = Contacts('Ben', 'Pettengill', '+12075578400')
+Mason = Contacts('megan', 'cream', '+230049329')
+Ben = Contacts('boy', 'dilly', '293993293')
 
 def sendTextMessage(to, body):
     message = client.messages.create(
